@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@1,500;1,700;1,800&display=swap');
+/* font-family:  */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+:root{
+  /* ===================Primary colors  */
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+/* ## Gradients */
+
+--Light-slate-blue-background: hsl(252, 100%, 67%);
+--Light-royal-blue-background: hsl(241, 81%, 54%);
+
+--Violet-blue-circle:  hsla(256, 72%, 46%, 1);
+--Persian-blue-circle:hsla(241, 72%, 46%, 0);
+
+/* =============Neutral colors  */
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+
+--font-size:18px;
+
+--f-weight-500:500;
+--f-weight-700:700;
+--f-weight-800:800;
+--f-family:'Hanken Grotesk', sans-serif;
+
+}
+
+
+body{
+  background-color: var(--White);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  font-size: var(--font-size);
+  font-family: var(--f-family);
+
+  
+}
+
+.mainCardContainer{
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(295px,1fr));
+  border-radius: 18px;
+  background-color: var(--White);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.Span{
+  color:var(--Light-lavender);
+  font-weight: var(--f-weight-700);
+
+
+}
+
+.resultSection{
+  padding: 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+
+  border-radius: 18px;
+
+  background-image: linear-gradient(to top,var(--Light-royal-blue-background),var(--Light-slate-blue-background));
+ 
+
+
+
+}
+
+.mainBodyContainer{
+  height: 11rem;
+  width: 11rem;
+  text-align: center;
+
+
+}
+.circleContainer{
+  background-image: linear-gradient(var(--Violet-blue-circle),var(--Persian-blue-circle)) ;
+  max-width: 100%; 
+  max-height: 100%; 
+  padding: 2.5rem;
+  border-radius:5rem;
+  
+}
+
+.boldPara{
+  font-weight: var(--f-weight-800);
+  font-size: 3rem;
+  color: var(--White);
+}
+
+#footerHeading{
+  color:var(--White);
+  padding-bottom: 1rem;
+  font-weight: var(--f-weight-700);
+}
+.lightPara{
+font-weight: var(--f-weight-500);
+color:var(--Light-lavender); 
+}
+
+
+/* ================================Summary Section ================================== */
+
+.SummarySection{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  background-color: var(--White);
+  border-top-right-radius: 18px; 
+  border-bottom-right-radius: 18px; 
+
+}
+#headerSpan1{
+  color:var(--Dark-gray-blue) !important;
+}
+.mainLabelsContainer{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+
+}
+.LabelContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.highWeightText{
+  font-weight: var(--f-weight-700);
+}
+.lightWeightText{
+  font-weight: var(--f-weight-500);
+  color:hsla(224, 30%, 27%, 0.401);
+  
+}
+
+#reactionSpan{
+  color:var(--Light-red);
+}
+
+#memorySpan{
+  color:var(--Orangey-yellow);
+
+}
+
+#verbalSpan{
+  color:var(--Green-teal);
+
+}
+#visualSpan{
+  color:var(--Cobalt-blue);
+
+}
+
+.reactionContainer{
+  padding: 0.5rem;
+  background-color: hsla(0, 100%, 67%, 0.112) ;
+}
+.memoryContainer{
+  background-color:  hsla(39, 100%, 56%, 0.119) ;
+}
+.verbalContainer{
+  background-color: rgba(0, 189, 145, 0.117)
+}
+.visualContainer{
+  background-color:hsla(234, 85%, 45%, 0.115); 
+}
+.footerContainer{
+  padding-top: 1rem;
+}
+.footerContentDivision button{
+  height: 2.5rem;
+  width: 15rem; 
+  background-color: var(--Dark-gray-blue);
+  color:var(--White);
+  font-weight: 500;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+
+button:hover{
+  cursor: pointer;
+  background-image: linear-gradient(to top,var(--Light-royal-blue-background),var(--Light-slate-blue-background));
+ 
+}
+
+/* ==================================Media Query FOr responsiveness ========================= */
+@media screen and (max-width:580px) {
+  
+  .footerContainer{
+    text-align: center;
+  }
+  .footerContainer button{
+    width: 21rem;
+  }
+  
+}
+@media screen and (max-width:450px) {
+  .footerContainer button{
+    width: 17.5rem;
+
+  }
+  
+}
